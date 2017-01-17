@@ -1,3 +1,45 @@
-body {
-	background-color: purple;
+#content {
+	color: #eee8d5;
+	font-family: "Monaco";
+	text-align: center;
+	outline-style: solid;
+}
+
+.header {
+	text-align: center;
+	margin: auto;
+	color: #cb4b16;
+	font-size: 60px;
+	font-variant: small;
+	font-family: "Monaco";
+	margin-bottom: 50px;
+}
+
+#entertainment {
+}
+
+#school {
+
+}
+
+#code {
+}
+
+.links {
+	padding-bottom: 12px;
+	margin: 0 auto;
+	display: inline-block;
+	vertical-align: top;
+}
+
+a:visited, a:link {
+	color: #b58900;
+	text-decoration: none;
+}
+
+.category {
+	margin: auto;
+	float: left;
+	width: 33.3%;
+	color: #657b83;
 }
