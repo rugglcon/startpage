@@ -15,7 +15,7 @@
 	margin-bottom: 50px;
 }
 
-#entertainment {
+#general{
 }
 
 #school {
@@ -44,6 +44,6 @@ a:visited, a:link {
 .category {
 	margin: auto;
 	float: left;
-	width: 33.3%;
+	width: 25%;
 	color: #657b83;
 }
