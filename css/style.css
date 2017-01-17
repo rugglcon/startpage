@@ -19,7 +19,6 @@
 }
 
 #school {
-
 }
 
 #code {
@@ -30,6 +29,11 @@
 	margin: 0 auto;
 	display: inline-block;
 	vertical-align: top;
+}
+
+.link {
+	padding-top: 2px;
+	padding-bottom: 2px;
 }
 
 a:visited, a:link {
