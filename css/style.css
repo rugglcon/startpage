@@ -5,6 +5,13 @@
 	outline-style: solid;
 }
 
+#footer {
+	color: #657b83;
+	float: right;
+	position: relative;
+	top: 256px;
+}
+
 .header {
 	text-align: center;
 	margin: auto;
