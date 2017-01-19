@@ -1,5 +1,5 @@
 <!doctype html>
-<html style="background-color: #002b36">
+<html>
 	<head>
 		<title>new page</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<h1 class="header">new page</h1>
+		<h1 id="header">new page</h1>
 		<div id="content">
 			<div id="general" class="category">
 				<h4>general</h4>
@@ -42,7 +42,7 @@
 						<a href="https://git.linux.iastate.edu">isu git</a><br>
 					</div>
 					<div class="link">
-						<a href="https://cymail.iastate.edu">isu email</a><br>
+						<a href="https://mail.google.com/mail/u/1/#inbox">isu email</a><br>
 					</div>
 					<div class="link">
 						<a href="https://cyhire.iastate.edu/">cyhire</a><br>
@@ -95,6 +95,15 @@
 					</div>
 				</div>
 			</div>
+		</div>
+		<div id="search">
+			<form method="get" action="https://www.google.com/search" class="search" name="cse" id="searchbox" >
+				<input type="hidden" name="cref" value="" />
+				<input type="hidden" name="ie" value="utf-8" />
+				<input type="hidden" name="hl" value="" />
+				<input id="sbar" name="q" type="text" size="40"/>
+				<button class="search" id="sbutton" type="submit" name="sa">search</button>
+			</form>
 		</div>
 		<div id="footer">
 			<p id="copyright">&copy; Connor Ruggles 2017</p>

@@ -1,25 +1,54 @@
-#content {
-	color: #eee8d5;
+html {
 	font-family: "Monaco";
+	background-color: #002b36;
+}
+
+#content {
+	color: #657b83;
 	text-align: center;
 	outline-style: solid;
+	margin: 2px;
+	overflow: hidden;
+}
+
+#search {
+	/*position: absolute;*/
+	padding-top: 30px;
+	text-align: center;
+}
+
+#sbar {
+	background-color: #002b36;
+	color: #657b83;
+	border: none;
+	border-bottom: solid 3px;
+	border-radius: 1px;
+}
+
+#sbutton {
+	font-family: "Monaco";
+	color: #657b83;
+	background-color: #002b36;
+	border: solid;
+	border-radius: 1px;
 }
 
 #footer {
 	color: #657b83;
 	float: right;
 	position: relative;
-	top: 256px;
+	top: 175px;
+	font-size: 14px;
 }
 
-.header {
+#header {
 	text-align: center;
 	margin: auto;
 	color: #cb4b16;
 	font-size: 60px;
-	font-variant: small;
-	font-family: "Monaco";
-	margin-bottom: 50px;
+	margin-top: 12px;
+	margin-bottom: 35px;
+	width: 350px;
 }
 
 .links {
