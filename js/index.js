@@ -8,12 +8,12 @@ $(document).ready(function() {
 	});
 
 	function handle_weather(parsed_json) {
-		var location = parsed_json.location.city;
 		var tempf = parsed_json.current_observation.temp_f;
 		$('#weather_temp').html('Current temperature: ' + tempf + '&deg');
 		var condition = parsed_json.current_observation.weather;
-		$('#weather_icon').html(condition);
-		var winddir = parsed_json.current_observation.wind_dir.toLowerCase();
+		var winddir = parsed_json.current_observation.wind_dir;
+		var windmph = parsed_json.current_observation.wind_mph;
+		$('#wind_mph').html('Wind is ' + windmph + ' mph coming from ' + winddir);
 		switch(condition.toLowerCase()) {
 			case 'overcast':
 				condition = 'cloudy';
@@ -72,6 +72,6 @@ $(document).ready(function() {
 			default:
 				break;
 		}
-		$('#wind_icon').html('<img src=\"https://icons.wxug.com/i/c/i/' + condition + '.gif\"/>');
+		$('#weather_icon').html('<img src=\"https://icons.wxug.com/i/c/i/' + condition + '.gif\"/>');
 	}
 });
