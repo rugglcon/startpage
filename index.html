@@ -1,63 +1,81 @@
 <!doctype html>
 <html>
 	<head>
-		<title>new page</title>
-		<link rel="stylesheet" href="css/style.css">
+		<title>New Tab</title>
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="./css/weather-icons.css">
+		<link rel="stylesheet" href="./css/weather-icons.min.css">
+		<link rel="stylesheet" href="./css/weather-icons-wind.css">
+		<link rel="stylesheet" href="./css/weather-icons-wind.min.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+		<script src="js/index.js"></script>
 	</head>
 	<body>
-		<h1 id="header">new page</h1>
+		<div id="search">
+			<form method="get" action="https://www.google.com/search" class="search" name="cse" id="searchbox" >
+				<input type="hidden" name="cref" value="" />
+				<input type="hidden" name="ie" value="utf-8" />
+				<input type="hidden" name="hl" value="" />
+				<input id="sbar" name="q" type="text" size="40"/>
+				<button class="search" id="sbutton" type="submit" name="sa">search</button>
+			</form>
+		</div>
+		<h1 id="header">Welcome</h1>
 		<div id="content">
 			<div id="general" class="category">
-				<h4>general</h4>
+				<h4>General</h4>
 				<div class="links">
 					<div class="link">
-						<a href="https://smile.amazon.com">amazon</a><br>
+						<a href="https://smile.amazon.com">Amazon</a><br>
 					</div>
 					<div class="link">
-						<a href="https://outlet.lenovo.com">lenovo outlet</a><br>
+						<a href="https://outlet.lenovo.com">Lenovo Outlet</a><br>
 					</div>
 					<div class="link">
-						<a href="https://ebay.com">ebay</a><br>
+						<a href="https://ebay.com">Ebay</a><br>
 					</div>
 					<div class="link">
-						<a href="https://craigslist.com">craigslist</a><br>
+						<a href="https://craigslist.com">Craigslist</a><br>
 					</div>
 					<div class="link">
-						<a href="https://gmail.com">gmail</a><br>
+						<a href="https://gmail.com">Gmail</a><br>
 					</div>
 				</div>
 			</div>
 			<div id="school" class="category">
-				<h4>school</h4>
+				<h4>School</h4>
 				<div class="links">
 					<div class="link">
-						<a href="https://bb.its.iastate.edu/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_1_1">blackboard</a><br>
+						<a href="https://bb.its.iastate.edu/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_1_1">Blackboard</a><br>
 					</div>
 					<div class="link">
-						<a href="https://accessplus.iastate.edu/frontdoor/sessionExpired.jsp">access+</a><br>
+						<a href="https://accessplus.iastate.edu/frontdoor/sessionExpired.jsp">Access+</a><br>
 					</div>
 					<div class="link">
-						<a href="https://git.linux.iastate.edu">isu git</a><br>
+						<a href="https://git.linux.iastate.edu">ISU git</a><br>
 					</div>
 					<div class="link">
-						<a href="https://mail.google.com/mail/u/1/#inbox">isu email</a><br>
+						<a href="https://mail.google.com/mail/u/1/#inbox">ISU email</a><br>
 					</div>
 					<div class="link">
-						<a href="https://cyhire.iastate.edu/">cyhire</a><br>
+						<a href="https://cyhire.iastate.edu/">CyHire</a><br>
+					</div>
+					<div class="link">
+						<a href="https://drive.google.com/drive/u/1/my-drive">ISU drive</a><br>
 					</div>
 				</div>
 			</div>
 			<div id="code" class="category">
-				<h4>code</h4>
+				<h4>Code</h4>
 				<div class="links">
 					<div class="link">
-						<a href="https://github.com/rugglcon">github</a><br>
+						<a href="https://github.com/rugglcon">Github</a><br>
 					</div>
 					<div class="link">
 						<a href="http://www.w3schools.com/">w3schools</a><br>
 					</div>
 					<div class="link">
-						<a href="http://ethanschoonover.com/solarized">solarized homepage</a><br>
+						<a href="http://ethanschoonover.com/solarized">Solarized homepage</a><br>
 					</div>
 					<div class="link">
 						<a href="https://elementary.io">elementary</a><br>
@@ -69,39 +87,36 @@
 						<a href="http://www.vim.org/">vim.org</a><br>
 					</div>
 					<div class="link">
-						<a href="https://docs.oracle.com/javase/8/docs/api/">java api</a><br>
+						<a href="https://docs.oracle.com/javase/8/docs/api/">Java API</a><br>
 					</div>
 				</div>
 			</div>
 			<div id="media" class="category">
-				<h4>media</h4>
+				<h4>Media</h4>
 				<div class="links">
 					<div class="link">
-						<a href="https://facebook.com">facebook</a><br>
+						<a href="https://facebook.com">Facebook</a><br>
 					</div>
 					<div class="link">
-						<a href="https://twitter.com">twitter</a><br>
+						<a href="https://twitter.com">Twitter</a><br>
 					</div>
 					<div class="link">
-						<a href="https://www.youtube.com">youtube</a><br>
+						<a href="https://www.youtube.com">YouTube</a><br>
 					</div>
 					<div class="link">
-						<a href="https://netflix.com">netflix</a><br>
+						<a href="https://netflix.com">Netflix</a><br>
 					</div>
 					<div class="link">
-						<a href="https://linkedin.com">linkedin</a><br>
+						<a href="https://linkedin.com">Linkedin</a><br>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div id="search">
-			<form method="get" action="https://www.google.com/search" class="search" name="cse" id="searchbox" >
-				<input type="hidden" name="cref" value="" />
-				<input type="hidden" name="ie" value="utf-8" />
-				<input type="hidden" name="hl" value="" />
-				<input id="sbar" name="q" type="text" size="40"/>
-				<button class="search" id="sbutton" type="submit" name="sa">search</button>
-			</form>
+		<div id="weather">
+			<p id="weather_temp"></p>
+			<div id="weather_icon"></div>
+			<p id="wind_mph"></p>
+			<div id="wind_icon"></div>
 		</div>
 		<div id="footer">
 			<p id="copyright">&copy; Connor Ruggles 2017</p>

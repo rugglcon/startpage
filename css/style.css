@@ -1,10 +1,9 @@
 html {
-	font-family: "Monaco";
 	background-color: #002b36;
-	/*background-image: url("../matterhorn.jpg");*/
 }
 
 #content {
+	font-family: "Monaco";
 	color: #657b83;
 	text-align: center;
 	outline-style: solid;
@@ -13,9 +12,20 @@ html {
 }
 
 #search {
-	/*position: absolute;*/
-	padding-top: 30px;
+	font-family: "Monaco";
+	position: absolute;
+	padding-top: 10px;
+	/*text-align: center;*/
+}
+
+#weather {
+	color: #657b83;
 	text-align: center;
+	padding-top: 10px;
+}
+
+#weather_temp, #weather_icon {
+	font-family: "Monaco";
 }
 
 #sbar {
@@ -35,17 +45,19 @@ html {
 }
 
 #footer {
+	font-family: "Monaco";
 	color: #657b83;
 	float: right;
 	position: relative;
-	top: 175px;
+	top: 155px;
 	font-size: 14px;
 }
 
 #header {
+	font-family: "Monaco";
 	text-align: center;
 	margin: auto;
-	color: #cb4b16;
+	color: #93a1a1;
 	font-size: 60px;
 	margin-top: 12px;
 	margin-bottom: 35px;
