@@ -69,6 +69,9 @@ $(document).ready(function() {
 			case 'chance of flurries':
 				condition = 'chanceflurries';
 				break;
+			case 'light snow':
+				condition = 'snow';
+				break;
 			default:
 				break;
 		}
