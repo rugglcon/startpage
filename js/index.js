@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	$.ajax({
-		url: "http://api.wunderground.com/api/5040da7e655d1412/geolookup/conditions/q/IA/Ames.json",
+		url: "https://api.wunderground.com/api/5040da7e655d1412/geolookup/conditions/q/IA/Ames.json",
 		dataType: "jsonp",
 		success: function(data) {
 			handle_weather(data);
