@@ -1,9 +1,9 @@
 html {
 	background-color: #002b36;
+	font-family: "Monaco";
 }
 
 #content {
-	font-family: "Monaco";
 	color: #657b83;
 	text-align: center;
 	outline-style: solid;
@@ -23,8 +23,7 @@ html {
 	padding-top: 10px;
 }
 
-#weather_temp, #weather_icon {
-	font-family: "Monaco";
+#weather_icon {
 }
 
 #sbar {
