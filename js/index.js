@@ -4,6 +4,9 @@ $(document).ready(function() {
 		dataType: "jsonp",
 		success: function(data) {
 			handle_weather(data);
+		},
+		error: function(data) {
+			$('#weather_temp').html('Error: ' + data);
 		}
 	});
 
@@ -73,6 +76,7 @@ $(document).ready(function() {
 				condition = 'snow';
 				break;
 			default:
+				condition = condition.toLowerCase();
 				break;
 		}
 		$('#weather_icon').html('<img src=\"https://icons.wxug.com/i/c/i/' + condition + '.gif\"/>');
