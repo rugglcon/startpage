@@ -51,6 +51,11 @@ html {
 	font-size: 14px;
 }
 
+#time, #date {
+ color: #657b83;
+ text-align: center;
+}
+
 #header {
 	font-family: "Monaco";
 	text-align: center;
