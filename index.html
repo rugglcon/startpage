@@ -5,8 +5,16 @@
 		<link rel="stylesheet" href="./css/style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 		<script src="js/index.js"></script>
+		<script>
+			function handle_date() {
+				var d = new Date();
+				$('#date').html(d.toDateString());
+				$('#time').html(d.toLocaleTimeString());
+				var t = setTimeout(handle_date, 500);
+			}
+		</script>
 	</head>
-	<body>
+	<body onload="handle_date()">
 		<div id="search">
 			<form method="get" action="https://www.google.com/search" class="search" name="cse" id="searchbox" >
 				<input type="hidden" name="cref" value="" />
