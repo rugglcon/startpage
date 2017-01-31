@@ -5,21 +5,25 @@ html {
 
 #content {
 	color: #657b83;
-	text-align: center;
 	outline-style: solid;
 	margin: 2px;
 	overflow: hidden;
 }
 
+#top {
+	margin-top: -35px;
+}
+
 #search {
-	font-family: "Monaco";
 	position: absolute;
 	padding-top: 10px;
+	margin-top: 12px;
+	float: left;
+	width: 33%;
 }
 
 #weather {
 	color: #657b83;
-	text-align: center;
 	padding-top: 10px;
 }
 
@@ -51,20 +55,33 @@ html {
 	font-size: 14px;
 }
 
-#time, #date {
- color: #657b83;
- text-align: center;
+#datetime {
+	color: #657b83;
+	width: 33%;
+	font-size: 30px;
+	float: right;
+}
+
+#date {
+	margin-bottom: -12px;
+	margin-top: 6px;
+}
+
+#time {
+	margin-top: -12px;
 }
 
 #header {
-	font-family: "Monaco";
-	text-align: center;
-	margin: auto;
+	margin: 0 auto;
 	color: #93a1a1;
 	font-size: 60px;
-	margin-top: 12px;
 	margin-bottom: 35px;
-	width: 350px;
+	width: 33%;
+	font-weight: bold;
+}
+
+.center {
+	text-align: center;
 }
 
 .links {

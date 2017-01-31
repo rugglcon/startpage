@@ -15,19 +15,27 @@
 		</script>
 	</head>
 	<body onload="handle_date()">
-		<div id="search">
-			<form method="get" action="https://www.google.com/search" class="search" name="cse" id="searchbox" >
-				<input type="hidden" name="cref" value="" />
-				<input type="hidden" name="ie" value="utf-8" />
-				<input type="hidden" name="hl" value="" />
-				<input id="sbar" name="q" type="text" size="40"/>
-				<button class="search" id="sbutton" type="submit" name="sa">search</button>
-			</form>
+		<div id="top">
+			<div id="search">
+				<form method="get" action="https://www.google.com/search" class="search" name="cse" id="searchbox" >
+					<input type="hidden" name="cref" value="" />
+					<input type="hidden" name="ie" value="utf-8" />
+					<input type="hidden" name="hl" value="" />
+					<input id="sbar" name="q" type="text" size="40"/>
+					<button class="search" id="sbutton" type="submit" name="sa">search</button>
+				</form>
+			</div>
+			<div id="datetime" class="center">
+				<strong>
+					<p id="date"></p><br>
+					<p id="time"></p>
+				</strong>
+			</div>
+			<div id="header" class="center">
+				<p>Welcome</p>
+			</div>
 		</div>
-		<h1 id="header">Welcome</h1>
-		<h1 id="date"></h1>
-		<h1 id="time"></h1>
-		<div id="content">
+		<div id="content" class="center">
 			<div id="general" class="category">
 				<h4>General</h4>
 				<div class="links">
@@ -124,7 +132,7 @@
 				</div>
 			</div>
 		</div>
-		<div id="weather">
+		<div id="weather" class="center">
 			<p id="weather_temp"></p>
 			<div id="weather_icon"></div>
 			<p id="wind_mph"></p>
