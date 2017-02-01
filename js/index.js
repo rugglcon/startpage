@@ -24,14 +24,14 @@ $(document).ready(function() {
 	function handle_forecast(forecast_data) {
 		var periods = forecast_data.forecast.simpleforecast.forecastday;
 		for(var i = 0; i < periods.length; i++) {
-			var forecast_div = $('<div></div>');
-			var day = $('<p class="center"></p>').text(periods[i].date.weekday);
+			var forecast_div = $('<div class="center"></div>');
+			var day = $('<p></p>').text(periods[i].date.weekday);
 			var high = periods[i].high.fahrenheit;
 			var low = periods[i].low.fahrenheit;
 			var avewind = periods[i].avewind.mph;
 			var avewind_dir = periods[i].avewind.dir;
-			var temp = $('<p class="center"></p>').text('High: ' + high + ' Low: ' + low);
-			$(forecast_div).css('width', '25%');
+			var temp = $('<p></p>').text('High: ' + high + ' Low: ' + low);
+			$(forecast_div).css({'width':'25%', 'float':'left'});
 			$(forecast_div).append(day, temp);
 			$('#forecast').append(forecast_div);
 		}
