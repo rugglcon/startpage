@@ -1,6 +1,5 @@
 html {
 	background-color: #002b36;
-	font-family: "Monaco";
 }
 
 #content {
@@ -36,14 +35,12 @@ html {
 }
 
 #sbutton {
-	font-family: "Monaco";
 	background-color: #002b36;
 	border: solid;
 	border-radius: 1px;
 }
 
 #footer {
-	font-family: "Monaco";
 	float: right;
 	position: relative;
 	top: 80px;
@@ -103,4 +100,8 @@ a:visited, a:link {
 
 .grey-color {
 	color: #657b83;
+}
+
+.monaco {
+	font-family: "Monaco";
 }
