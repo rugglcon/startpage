@@ -26,13 +26,14 @@ $(document).ready(function() {
 		for(var i = 0; i < periods.length; i++) {
 			var forecast_div = $('<div class="center"></div>');
 			var day = $('<p></p>').text(periods[i].date.weekday);
+			var icon = $('<img src="' + periods[i].icon_url.replace('i/c/k/', 'i/c/i/') + '"/>');
 			var high = periods[i].high.fahrenheit;
 			var low = periods[i].low.fahrenheit;
 			var avewind = periods[i].avewind.mph;
 			var avewind_dir = periods[i].avewind.dir;
 			var temp = $('<p></p>').text('High: ' + high + ' Low: ' + low);
 			$(forecast_div).css({'width':'25%', 'float':'left'});
-			$(forecast_div).append(day, temp);
+			$(forecast_div).append(day, icon, temp);
 			$('#forecast').append(forecast_div);
 		}
 	}
