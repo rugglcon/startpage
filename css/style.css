@@ -21,7 +21,6 @@ html {
 }
 
 #weather {
-	padding-top: 10px;
 }
 
 #weather_icon {
@@ -69,6 +68,14 @@ html {
 	margin-bottom: 35px;
 	width: 33%;
 	font-weight: bold;
+}
+
+.border_top {
+	border-top: 2px solid;
+}
+
+.border_bottom {
+	border-bottom: 2px solid;
 }
 
 .center {

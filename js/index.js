@@ -24,7 +24,7 @@ $(document).ready(function() {
 	function handle_forecast(forecast_data) {
 		var periods = forecast_data.forecast.simpleforecast.forecastday;
 		for(var i = 0; i < periods.length; i++) {
-			var forecast_div = $('<div class="center"></div>');
+			var forecast_div = $('<div class="center border_top"></div>');
 			var day = $('<p></p>').text(periods[i].date.weekday);
 			var icon = $('<img src="' + periods[i].icon_url.replace('i/c/k/', 'i/c/i/') + '"/>');
 			var high = periods[i].high.fahrenheit;
