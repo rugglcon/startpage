@@ -32,8 +32,9 @@ $(document).ready(function() {
 			var avewind = periods[i].avewind.mph;
 			var avewind_dir = periods[i].avewind.dir;
 			var temp = $('<p></p>').text('High: ' + high + ' Low: ' + low);
+			var wind = $('<p></p>').text('Ave wind: ' + avewind + ' mph');
 			$(forecast_div).css({'width':'25%', 'float':'left'});
-			$(forecast_div).append(day, icon, temp);
+			$(forecast_div).append(day, icon, temp, wind);
 			$('#forecast').append(forecast_div);
 		}
 	}
