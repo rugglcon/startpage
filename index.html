@@ -16,6 +16,9 @@
 	</head>
 	<body onload="handle_date()">
 		<div id="top">
+			<div id="header">
+				<p>Welcome</p>
+			</div>
 			<div id="search">
 				<form method="get" action="https://www.google.com/search" class="search" name="cse" id="searchbox" target="_blank">
 					<input type="hidden" name="cref" value="" />
@@ -25,14 +28,9 @@
 					<button class="search grey-color monaco" id="sbutton" type="submit" name="sa">search</button>
 				</form>
 			</div>
-			<div id="datetime" class="center grey-color">
-				<strong>
-					<p id="date"></p><br>
-					<p id="time"></p>
-				</strong>
-			</div>
-			<div id="header" class="center">
-				<p>Welcome</p>
+			<div id="datetime" class="left grey-color">
+				<p id="date"></p><br>
+				<p id="time"></p>
 			</div>
 		</div>
 		<div id="content" class="center grey-color">
