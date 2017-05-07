@@ -24,10 +24,88 @@ html {
 	float: right;
 }
 
-#weather {
+#gen_img {
+	width: 250px;
+	height: auto;
 }
 
-#weather_icon {
+#general {
+	display: none;
+	border: 2px solid;
+}
+
+#show_gen {
+	width: 200px;
+	height: auto;
+}
+
+#show_gen:hover #general {
+	display: block;
+	width: 250px;
+	height: auto;
+}
+
+#school_img {
+	width: 250px;
+	height: auto;
+}
+
+#school {
+	display: none;
+	border: 2px solid;
+}
+
+#show_school {
+	width: 200px;
+	height: auto;
+}
+
+#show_school:hover #school {
+	display: block;
+	width: 250px;
+	height: auto;
+}
+
+#media_img {
+	width: 250px;
+	height: auto;
+}
+
+#media {
+	display: none;
+	border: 2px solid;
+}
+
+#show_media {
+	width: 200px;
+	height: auto;
+}
+
+#show_media:hover #media {
+	display: block;
+	width: 250px;
+	height: auto;
+}
+
+#code {
+	display: none;
+	border: 2px solid;
+}
+
+#show_code {
+	width: 200px;
+	height: auto;
+}
+
+#show_code:hover #code {
+	display: block;
+	width: 250px;
+	height: auto;
+}
+
+#code_img {
+	width: 250px;
+	height: auto;
 }
 
 #sbar {
@@ -40,6 +118,7 @@ html {
 #sbutton {
 	border: solid 2px;
 	border-radius: 1px;
+	font-size: 17px;
 }
 
 #footer {
@@ -57,11 +136,6 @@ html {
 #date {
 	margin-bottom: -60px;
 }
-
-#time {
-}
-
-
 
 .border_top {
 	border-top: 2px solid;
@@ -96,16 +170,10 @@ a:visited, a:link {
 	text-decoration: none;
 }
 
-.category {
-	margin: auto;
-	float: left;
-	width: 25%;
-}
-
 .grey-color {
 	color: #657b83;
 }
 
-.monaco {
+.gill {
 	font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
 }

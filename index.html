@@ -1,7 +1,8 @@
 <!doctype html>
-<html class="monaco">
+<html class="gill">
 	<head>
 		<title>New Tab</title>
+		<meta charset="utf-8">
 		<link rel="stylesheet" href="./css/style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 		<script src="js/index.js"></script>
@@ -24,8 +25,8 @@
 					<input type="hidden" name="cref" value="" />
 					<input type="hidden" name="ie" value="utf-8" />
 					<input type="hidden" name="hl" value="" />
-					<input class="grey-color" id="sbar" name="q" type="text" size="40"/>
-					<button class="search grey-color monaco" id="sbutton" type="submit" name="sa">search</button>
+					<input class="grey-color" id="sbar" name="q" type="text" size="40" placeholder="Search"/>
+					<button class="search grey-color gill" id="sbutton" type="submit" name="sa">search</button>
 				</form>
 			</div>
 			<div id="datetime" class="left grey-color">
@@ -33,102 +34,114 @@
 				<p id="time"></p>
 			</div>
 		</div>
-		<div id="content" class="center grey-color">
-			<div id="general" class="category grey-color">
-				<h4>General</h4>
-				<div class="links">
-					<div class="link">
-						<a href="https://smile.amazon.com">Amazon</a><br>
-					</div>
-					<div class="link">
-						<a href="https://outlet.lenovo.com">Lenovo Outlet</a><br>
-					</div>
-					<div class="link">
-						<a href="https://ebay.com">Ebay</a><br>
-					</div>
-					<div class="link">
-						<a href="https://craigslist.com">Craigslist</a><br>
-					</div>
-					<div class="link">
-						<a href="https://gmail.com">Gmail</a><br>
-					</div>
-				</div>
-			</div>
-			<div id="school" class="category grey-color">
-				<h4>School</h4>
-				<div class="links">
-					<div class="link">
-						<a href="https://bb.its.iastate.edu/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_1_1">Blackboard</a><br>
-					</div>
-					<div class="link">
-						<a href="https://accessplus.iastate.edu/frontdoor/sessionExpired.jsp">Access+</a><br>
-					</div>
-					<div class="link">
-						<a href="https://git.linux.iastate.edu">ISU git</a><br>
-					</div>
-					<div class="link">
-						<a href="https://mail.google.com/mail/u/1/#inbox">ISU email</a><br>
-					</div>
-					<div class="link">
-						<a href="https://cyhire.iastate.edu/">CyHire</a><br>
-					</div>
-					<div class="link">
-						<a href="https://drive.google.com/drive/u/1/my-drive">ISU drive</a><br>
-					</div>
-					<div class="link">
-						<a href="https://trello.com/b/uJ7Bc8de/2017spring-la-3">Trello</a>
-					</div>
-					<div class="link">
-						<a href="http://proj-309-la-3.cs.iastate.edu">309 server</a>
+		<div id="content" class="grey-color">
+			<div id="show_gen">
+				<img src="images/shopping.png" id="gen_img"/>
+				<div id="general" class="grey-color">
+					<h4>General</h4>
+					<div class="links">
+						<div class="link">
+							<a href="https://smile.amazon.com">Amazon</a><br>
+						</div>
+						<div class="link">
+							<a href="https://outlet.lenovo.com">Lenovo Outlet</a><br>
+						</div>
+						<div class="link">
+							<a href="https://ebay.com">Ebay</a><br>
+						</div>
+						<div class="link">
+							<a href="https://craigslist.com">Craigslist</a><br>
+						</div>
+						<div class="link">
+							<a href="https://gmail.com">Gmail</a><br>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div id="code" class="category grey-color">
-				<h4>Code</h4>
-				<div class="links">
-					<div class="link">
-						<a href="https://github.com/rugglcon">Github</a><br>
-					</div>
-					<div class="link">
-						<a href="http://www.w3schools.com/">w3schools</a><br>
-					</div>
-					<div class="link">
-						<a href="http://ethanschoonover.com/solarized">Solarized homepage</a><br>
-					</div>
-					<div class="link">
-						<a href="https://elementary.io">elementary</a><br>
-					</div>
-					<div class="link">
-						<a href="http://localhost:8080/">www folder</a><br>
-					</div>
-					<div class="link">
-						<a href="http://www.vim.org/">vim.org</a><br>
-					</div>
-					<div class="link">
-						<a href="https://docs.oracle.com/javase/8/docs/api/">Java API</a><br>
+			<div id="show_school">
+				<img src="images/istate.gif" id="school_img"/>
+				<div id="school" class="grey-color">
+					<h4>School</h4>
+					<div class="links">
+						<div class="link">
+							<a href="https://bb.its.iastate.edu/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_1_1">Blackboard</a><br>
+						</div>
+						<div class="link">
+							<a href="https://accessplus.iastate.edu/frontdoor/sessionExpired.jsp">Access+</a><br>
+						</div>
+						<div class="link">
+							<a href="https://git.linux.iastate.edu">ISU git</a><br>
+						</div>
+						<div class="link">
+							<a href="https://mail.google.com/mail/u/1/#inbox">ISU email</a><br>
+						</div>
+						<div class="link">
+							<a href="https://cyhire.iastate.edu/">CyHire</a><br>
+						</div>
+						<div class="link">
+							<a href="https://drive.google.com/drive/u/1/my-drive">ISU drive</a><br>
+						</div>
+						<div class="link">
+							<a href="https://trello.com/b/uJ7Bc8de/2017spring-la-3">Trello</a>
+						</div>
+						<div class="link">
+							<a href="http://proj-309-la-3.cs.iastate.edu">309 server</a>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div id="media" class="category grey-color">
-				<h4>Media</h4>
-				<div class="links">
-					<div class="link">
-						<a href="https://facebook.com">Facebook</a><br>
+			<div id="show_code">
+				<img src="images/bash.png" id="code_img"/>
+				<div id="code" class="grey-color">
+					<h4>Code</h4>
+					<div class="links">
+						<div class="link">
+							<a href="https://github.com/rugglcon">Github</a><br>
+						</div>
+						<div class="link">
+							<a href="http://www.w3schools.com/">w3schools</a><br>
+						</div>
+						<div class="link">
+							<a href="http://ethanschoonover.com/solarized">Solarized homepage</a><br>
+						</div>
+						<div class="link">
+							<a href="https://elementary.io">elementary</a><br>
+						</div>
+						<div class="link">
+							<a href="http://localhost:8080/">www folder</a><br>
+						</div>
+						<div class="link">
+							<a href="http://www.vim.org/">vim.org</a><br>
+						</div>
+						<div class="link">
+							<a href="https://docs.oracle.com/javase/8/docs/api/">Java API</a><br>
+						</div>
 					</div>
-					<div class="link">
-						<a href="https://twitter.com">Twitter</a><br>
-					</div>
-					<div class="link">
-						<a href="https://www.youtube.com">YouTube</a><br>
-					</div>
-					<div class="link">
-						<a href="https://netflix.com">Netflix</a><br>
-					</div>
-					<div class="link">
-						<a href="https://linkedin.com">Linkedin</a><br>
-					</div>
-					<div class="link">
-						<a href="https://www.couch-tuner.ag/">CouchTuner</a><br>
+				</div>
+			</div>
+			<div id="show_media">
+				<img id="media_img" src="images/media.png"/>
+				<div id="media" class="grey-color">
+					<h4>Media</h4>
+					<div class="links">
+						<div class="link">
+							<a href="https://facebook.com">Facebook</a><br>
+						</div>
+						<div class="link">
+							<a href="https://twitter.com">Twitter</a><br>
+						</div>
+						<div class="link">
+							<a href="https://www.youtube.com">YouTube</a><br>
+						</div>
+						<div class="link">
+							<a href="https://netflix.com">Netflix</a><br>
+						</div>
+						<div class="link">
+							<a href="https://linkedin.com">Linkedin</a><br>
+						</div>
+						<div class="link">
+							<a href="https://www.couch-tuner.ag/">CouchTuner</a><br>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -140,7 +153,7 @@
 		</div>
 		<div id="forecast" class="grey-color">
 		</div>
-		<!--<div id="footer" class="grey-color monaco">-->
+		<!--<div id="footer" class="grey-color gill">-->
 			<!--<p id="copyright">&copy; Connor Ruggles 2017</p>-->
 		<!--</div>-->
 	</body>
