@@ -1,25 +1,40 @@
-$(document).ready(function() {
-	$.ajax({
-		url: "https://api.wunderground.com/api/5040da7e655d1412/geolookup/conditions/q/IA/Ames.json",
-		dataType: "jsonp",
-		success: function(data) {
-			handle_weather(data);
-		},
-		error: function(data) {
-			$('#cur_weather_temp').html('Error: ' + data);
-		}
-	});
+// window.onload = function() {
+// 	var modal = document.getElementById("general");
+// 	var show = document.getElementById("gen_img");
 
-	$.ajax({
-		url: "https://api.wunderground.com/api/5040da7e655d1412/geolookup/forecast/q/IA/Ames.json",
-		dataType: "jsonp",
-		success: function(data) {
-			handle_forecast(data);
-		},
-		error: function(data) {
-			$('#weather').html('Error: ' + data);
-		}
-	});
+// 	show.onclick = function() {
+// 		modal.style.display = "block";
+// 	}
+// 	show.onmouseout = function() {
+// 		modal.style.display = "none";
+// 	}
+// }
+
+
+$(document).ready(function() {
+
+
+	// $.ajax({
+	// 	url: "https://api.wunderground.com/api/5040da7e655d1412/geolookup/conditions/q/IA/Ames.json",
+	// 	dataType: "jsonp",
+	// 	success: function(data) {
+	// 		handle_weather(data);
+	// 	},
+	// 	error: function(data) {
+	// 		$('#cur_weather_temp').html('Error: ' + data);
+	// 	}
+	// });
+
+	// $.ajax({
+	// 	url: "https://api.wunderground.com/api/5040da7e655d1412/geolookup/forecast/q/IA/Ames.json",
+	// 	dataType: "jsonp",
+	// 	success: function(data) {
+	// 		handle_forecast(data);
+	// 	},
+	// 	error: function(data) {
+	// 		$('#weather').html('Error: ' + data);
+	// 	}
+	// });
 
 	function handle_forecast(forecast_data) {
 		var periods = forecast_data.forecast.simpleforecast.forecastday;

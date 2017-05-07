@@ -37,7 +37,9 @@
 		<div id="content" class="grey-color">
 			<div id="show_gen">
 				<img src="images/shopping.png" id="gen_img"/>
-				<div id="general" class="grey-color">
+			</div>
+			<div id="general" class="grey-color modal">
+				<div class="modal-content">
 					<h4>General</h4>
 					<div class="links">
 						<div class="link">
@@ -156,5 +158,16 @@
 		<!--<div id="footer" class="grey-color gill">-->
 			<!--<p id="copyright">&copy; Connor Ruggles 2017</p>-->
 		<!--</div>-->
+		<script>
+			var modal = document.getElementById("general");
+			var show = document.getElementById("gen_img");
+
+			show.onclick = function() {
+				modal.style.display = "block";
+			}
+			modal.onmouseleave = function() {
+				modal.style.display = "none";
+			}
+		</script>
 	</body>
 </html>

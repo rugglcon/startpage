@@ -30,18 +30,11 @@ html {
 }
 
 #general {
-	display: none;
 	border: 2px solid;
 }
 
 #show_gen {
 	width: 200px;
-	height: auto;
-}
-
-#show_gen:hover #general {
-	display: block;
-	width: 250px;
 	height: auto;
 }
 
@@ -58,12 +51,7 @@ html {
 #show_school {
 	width: 200px;
 	height: auto;
-}
-
-#show_school:hover #school {
-	display: block;
-	width: 250px;
-	height: auto;
+	float: right;
 }
 
 #media_img {
@@ -81,12 +69,6 @@ html {
 	height: auto;
 }
 
-#show_media:hover #media {
-	display: block;
-	width: 250px;
-	height: auto;
-}
-
 #code {
 	display: none;
 	border: 2px solid;
@@ -94,12 +76,6 @@ html {
 
 #show_code {
 	width: 200px;
-	height: auto;
-}
-
-#show_code:hover #code {
-	display: block;
-	width: 250px;
 	height: auto;
 }
 
@@ -176,4 +152,24 @@ a:visited, a:link {
 
 .gill {
 	font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 250px;
+	height: auto;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+	background-color: #fefefe;
+	margin: 15% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
 }
