@@ -1,16 +1,3 @@
-// window.onload = function() {
-// 	var modal = document.getElementById("general");
-// 	var show = document.getElementById("gen_img");
-
-// 	show.onclick = function() {
-// 		modal.style.display = "block";
-// 	}
-// 	show.onmouseout = function() {
-// 		modal.style.display = "none";
-// 	}
-// }
-
-
 $(document).ready(function() {
 
 
@@ -38,8 +25,8 @@ $(document).ready(function() {
 
 	function handle_forecast(forecast_data) {
 		var periods = forecast_data.forecast.simpleforecast.forecastday;
-		for(var i = 0; i < periods.length; i++) {
-			var forecast_div = $('<div class="center border_top"></div>');
+		for(var i = 1; i < periods.length - 1; i++) {
+			var forecast_div = $('<div class="border_top border_right"></div>');
 			var day = $('<p></p>').text(periods[i].date.weekday);
 			var icon = $('<img src="' + periods[i].icon_url.replace('i/c/k/', 'i/c/i/') + '"/>');
 			var high = periods[i].high.fahrenheit;
@@ -48,7 +35,7 @@ $(document).ready(function() {
 			var avewind_dir = periods[i].avewind.dir;
 			var temp = $('<p></p>').text('High: ' + high + ' Low: ' + low);
 			var wind = $('<p></p>').text('Ave wind: ' + avewind + ' mph');
-			$(forecast_div).css({'width':'25%', 'float':'left'});
+			$(forecast_div).css({'float':'left'});
 			$(forecast_div).append(day, icon, temp, wind);
 			$('#forecast').append(forecast_div);
 		}

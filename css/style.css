@@ -24,8 +24,36 @@ html {
 	float: right;
 }
 
+#sbar {
+	border: solid 2px;
+	/*border-bottom: solid 2px;*/
+	/*border-left: solid 2px;*/
+	border-radius: 1px;
+}
+
+#sbutton {
+	display: inline-block;
+	position: relative;
+	background-image: "../images/search.png";
+	left: -26px;
+	height: 19px;
+	width: 20px;
+	top: -5px;
+	border: none;
+}
+
+#weather {
+	float: left;
+	/*width: auto;*/
+}
+
+#sidebar {
+	float: left;
+	width: 20%;
+}
+
 #gen_img {
-	width: 250px;
+	width: 200px;
 	height: auto;
 }
 
@@ -39,7 +67,7 @@ html {
 }
 
 #school_img {
-	width: 250px;
+	width: 200px;
 	height: auto;
 }
 
@@ -55,7 +83,7 @@ html {
 }
 
 #media_img {
-	width: 250px;
+	width: 200px;
 	height: auto;
 }
 
@@ -80,21 +108,8 @@ html {
 }
 
 #code_img {
-	width: 250px;
+	width: 200px;
 	height: auto;
-}
-
-#sbar {
-	border: solid 2px;
-	/*border-bottom: solid 2px;*/
-	/*border-left: solid 2px;*/
-	border-radius: 1px;
-}
-
-#sbutton {
-	border: solid 2px;
-	border-radius: 1px;
-	font-size: 17px;
 }
 
 #footer {
@@ -119,6 +134,16 @@ html {
 
 .border_bottom {
 	border-bottom: 2px solid;
+}
+
+.border_right {
+	border-right: 2px solid;
+}
+
+.category {
+	float: left;
+	width: 40%;
+	/*height: 50%;*/
 }
 
 .center {
@@ -158,8 +183,8 @@ a:visited, a:link {
 	display: none;
 	position: fixed;
 	z-index: 1;
-	left: 0;
-	top: 0;
+	/*left: 0;
+	top: 0;*/
 	width: 250px;
 	height: auto;
 	overflow: auto;
