@@ -1,3 +1,4 @@
 #ignore all tmp files from vim
 .*.sw*
 .vscode
+*.xcf
