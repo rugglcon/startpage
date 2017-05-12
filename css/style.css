@@ -5,6 +5,7 @@ html {
 #content {
 	margin: 2px;
 	overflow: hidden;
+	padding-left: 20px;
 }
 
 #top {
@@ -52,63 +53,47 @@ html {
 	width: 20%;
 }
 
-#gen_img {
-	width: 200px;
-	height: auto;
-}
-
 #general {
+	display: none;
 	border: 2px solid;
+	float: left;
 }
 
 #show_gen {
-	width: 200px;
-	height: auto;
-}
-
-#school_img {
-	width: 200px;
+	/*width: 200px;*/
 	height: auto;
 }
 
 #school {
 	display: none;
 	border: 2px solid;
+	float: left;
 }
 
 #show_school {
-	width: 200px;
-	height: auto;
-	float: right;
-}
-
-#media_img {
-	width: 200px;
+	/*width: 200px;*/
 	height: auto;
 }
 
 #media {
 	display: none;
 	border: 2px solid;
+	float: left;
 }
 
 #show_media {
-	width: 200px;
+	/*width: 200px;*/
 	height: auto;
 }
 
 #code {
 	display: none;
 	border: 2px solid;
+	float: left;
 }
 
 #show_code {
-	width: 200px;
-	height: auto;
-}
-
-#code_img {
-	width: 200px;
+	/*width: 200px;*/
 	height: auto;
 }
 
@@ -128,6 +113,16 @@ html {
 	margin-bottom: -60px;
 }
 
+#first-row {
+	height: 150px;
+	margin-bottom: 10px;
+}
+
+#second-row {
+	height: 150px;
+	margin-top: 10px;
+}
+
 .border_top {
 	border-top: 2px solid;
 }
@@ -140,10 +135,10 @@ html {
 	border-right: 2px solid;
 }
 
-.category {
-	float: left;
-	width: 40%;
-	/*height: 50%;*/
+.category img {
+	width: 200px;
+	height: auto;
+	/*float: left;*/
 }
 
 .center {
@@ -181,20 +176,42 @@ a:visited, a:link {
 
 .modal {
 	display: none;
-	position: fixed;
+	position: absolute;
 	z-index: 1;
 	/*left: 0;
 	top: 0;*/
-	width: 250px;
+	width: 210px;
 	height: auto;
 	overflow: auto;
 	background-color: rgba(0, 0, 0, 0.4);
+	/*float: left;*/
 }
 
 .modal-content {
 	background-color: #fefefe;
-	margin: 15% auto;
+	margin: 5% auto;
 	padding: 20px;
 	border: 1px solid #888;
 	width: 80%;
+}
+
+.small-bottom {
+	margin-bottom: -1px;
+}
+
+.small-top {
+	margin-top: -1px;
+}
+
+table {
+	width: 100%;
+	margin: 10px;
+}
+
+td {
+	width: 25%;
+}
+
+tr {
+	width: 50%;
 }
