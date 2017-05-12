@@ -1,15 +1,11 @@
 html {
-	/*background-color: #002b36;*/
+	font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
 }
 
 #content {
 	margin: 2px;
 	overflow: hidden;
 	padding-left: 20px;
-}
-
-#top {
-	/*margin-top: -35px;*/
 }
 
 #header {
@@ -27,8 +23,6 @@ html {
 
 #sbar {
 	border: solid 2px;
-	/*border-bottom: solid 2px;*/
-	/*border-left: solid 2px;*/
 	border-radius: 1px;
 }
 
@@ -45,7 +39,7 @@ html {
 
 #weather {
 	float: left;
-	/*width: auto;*/
+	width: auto;
 }
 
 #sidebar {
@@ -60,7 +54,6 @@ html {
 }
 
 #show_gen {
-	/*width: 200px;*/
 	height: auto;
 }
 
@@ -71,7 +64,6 @@ html {
 }
 
 #show_school {
-	/*width: 200px;*/
 	height: auto;
 }
 
@@ -82,7 +74,6 @@ html {
 }
 
 #show_media {
-	/*width: 200px;*/
 	height: auto;
 }
 
@@ -93,7 +84,6 @@ html {
 }
 
 #show_code {
-	/*width: 200px;*/
 	height: auto;
 }
 
@@ -138,7 +128,6 @@ html {
 .category img {
 	width: 200px;
 	height: auto;
-	/*float: left;*/
 }
 
 .center {
@@ -178,13 +167,10 @@ a:visited, a:link {
 	display: none;
 	position: absolute;
 	z-index: 1;
-	/*left: 0;
-	top: 0;*/
 	width: 210px;
 	height: auto;
 	overflow: auto;
 	background-color: rgba(0, 0, 0, 0.4);
-	/*float: left;*/
 }
 
 .modal-content {
