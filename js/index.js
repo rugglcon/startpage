@@ -1,6 +1,4 @@
 $(document).ready(function() {
-
-
 	$.ajax({
 		url: "https://api.wunderground.com/api/5040da7e655d1412/geolookup/conditions/q/IA/Ames.json",
 		dataType: "jsonp",
