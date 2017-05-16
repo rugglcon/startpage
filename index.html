@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="gill">
+<html>
 	<head>
 		<title>New Tab</title>
 		<meta charset="utf-8">
@@ -25,31 +25,31 @@
 					<input type="hidden" name="cref" value="" />
 					<input type="hidden" name="ie" value="utf-8" />
 					<input type="hidden" name="hl" value="" />
-					<input class="grey-color" id="sbar" name="q" type="text" size="40" placeholder="Search"/>
+					<input id="sbar" name="q" type="text" size="40" placeholder="Search"/>
 					<button id="sbutton" type="submit" name="sa"></button>
 				</form>
 			</div>
 		</div>
 		<div id="sidebar">
-			<div id="datetime" class="left grey-color">
+			<div id="datetime" class="left">
 				<p id="date"></p><br>
 				<p id="time"></p>
 			</div>
-			<div id="weather" class="grey-color border_right border_top">
+			<div id="weather" class="border_right border_top center">
 				<p id="cur_weather_temp" class="small-bottom"></p>
 				<div id="cur_weather_icon"></div>
 				<p id="cur_wind_mph" class="small-top"></p>
-				<div id="forecast" class="grey-color">
+				<div id="forecast">
 				</div>
 			</div>
 		</div>
-		<div id="content" class="grey-color">
+		<div id="content">
 			<table id="div-table">
 				<tr>
 					<td>
 						<div id="show_gen" class="category">
 							<img src="images/shopping.png" id="gen_img"/>
-							<div id="general" class="grey-color modal">
+							<div id="general" class="modal">
 								<div class="modal-content">
 									<h4>General</h4>
 									<div class="links">
@@ -76,7 +76,7 @@
 					<td>
 						<div id="show_school" class="category">
 							<img src="images/istate.png" id="school_img"/>
-							<div id="school" class="grey-color modal">
+							<div id="school" class="modal">
 								<div class="modal-content">
 									<h4>School</h4>
 									<div class="links">
@@ -114,7 +114,7 @@
 					<td>
 						<div id="show_code" class="category">
 							<img src="images/bash.png" id="code_img"/>
-							<div id="code" class="grey-color modal">
+							<div id="code" class="modal">
 								<div class="modal-content">
 									<h4>Code</h4>
 									<div class="links">
@@ -147,7 +147,7 @@
 					<td>
 						<div id="show_media" class="category">
 							<img id="media_img" src="images/media.png"/>
-							<div id="media" class="grey-color modal">
+							<div id="media" class="modal">
 								<div class="modal-content">
 									<h4>Media</h4>
 									<div class="links">
@@ -177,11 +177,6 @@
 				</tr>
 			</table>
 		</div>
-
-
-		<!--<div id="footer" class="grey-color gill">-->
-			<!--<p id="copyright">&copy; Connor Ruggles 2017</p>-->
-		<!--</div>-->
 		<script>
 			var modals = ["general", "school", "code", "media"];
 			var shows = ["show_gen", "show_school", "show_code", "show_media"];
